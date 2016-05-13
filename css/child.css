@@ -419,9 +419,7 @@ span.tab-text { position: relative; top: -10px; }*/
 span.views-label-field-location { float: left; margin-right: 5px; }
 
 
-/*
- * Node pages
- */
+/* Node pages */
 
 .page-node .sidebar .block:first-child { margin-bottom: 0; }
 .page-node .sidebar h2 { background-color: rgb(73, 53, 82); color: white; padding: 5px 10px; border-radius: 4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0;}
@@ -435,3 +433,10 @@ span.views-label-field-location { float: left; margin-right: 5px; }
 .node-type-event .field-name-field-date { margin-bottom: .4em; }
 
 .page-node #block-system-main { font-size: 1.1em; }
+
+
+/* Map */
+.views-exposed-widgets { margin-bottom: 0; background: #363636; color: white; border-radius: 10px 10px 0 0; }
+.views-exposed-form .views-exposed-widget { float: right; }
+.views-exposed-form .form-item { float: left; margin-right: 5px; }
+.views-exposed-widget > label { text-transform: uppercase; }
