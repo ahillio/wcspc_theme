@@ -82,6 +82,7 @@ a:active { color: #333; }
 
 /* 2.8 Forms */
 .form-item .description, .filter-guidelines { color: #999; }
+input { border-radius: 3px; }
 input, select, textarea { border: 1px solid #ccc; color: #333; font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif; box-shadow: 0 1px 1px #eee inset; -moz-box-shadow: 0 1px 1px #eee inset; -webkit-box-shadow: 0 1px 1px #eee inset; }
 input:focus, select:focus, textarea:focus { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; border-color: #333; }
 fieldset { border-color: #ccc; }
@@ -140,12 +141,8 @@ a#logo { width: 300px; display: block; }
 @media screen and (max-width: 767px) {
 	#navigation h2.navigation-header { font-size: 1.7em; }
 	span.om-link { font-size: 1.3em; }
-	#navigation .block:first-child h3.collapsed {
-	  margin-top: -23px;
-	}
-	#navigation .block h3.collapsed {
-	  margin: 20px 0 5px;
-	}
+	#navigation .block:first-child h3.collapsed { margin-top: -23px; }
+	#navigation .block h3.collapsed { margin: 20px 0 5px; }
 	.om-maximenu-content p, .om-maximenu-content li { margin-bottom: 1em !important; }
 	#navigation .form-item { margin: 0; }
 	.leaf-connect input[type="submit"] { top: 49px !important; }
@@ -436,7 +433,21 @@ span.views-label-field-location { float: left; margin-right: 5px; }
 
 
 /* Map */
+/* Should be specifically targeting map and not other views */
 .views-exposed-widgets { margin-bottom: 0; background: #363636; color: white; border-radius: 10px 10px 0 0; }
 .views-exposed-form .views-exposed-widget { float: right; }
 .views-exposed-form .form-item { float: left; margin-right: 5px; }
 .views-exposed-widget > label { text-transform: uppercase; }
+
+/* User Register Form */
+#edit-field-first-name, #edit-field-last-name { width: 45%; max-width: 300px; float: left; }
+#edit-field-first-name .form-item, #edit-field-last-name .form-item { margin: 20px 0; }
+#edit-field-last-name { margin-left: 10px; }
+#edit-field-demographic > .form-item { width: 100%; }
+.form-item-field-demographic-und > label { float: left; margin-right: 10px; }
+.form-item.form-item-field-demographic-und { float: left; margin-right: 10px; margin-top: 0; }
+#edit-account { clear: both; }
+.password-strength { display: none; }
+@media (max-width: 470px) {
+  input#edit-mail { width: 240px; }
+}
